@@ -1,7 +1,3 @@
-<!DOCTYPE html>
-<html>
-<body>
-
 <?php
 //class
 class Hewan {
@@ -20,13 +16,11 @@ class Hewan {
   function __destruct() {
     echo "Hewan ini bernama {$this->nama}."; 
     echo "<br>";
-    echo "<hr>";
   }
  
   public function intro() {
     echo "Hewan ini bernama {$this->nama} dan mempunyai warna {$this->warna}."; 
     echo "<br>";
-    echo "<hr>";
   }
 }
 
@@ -35,7 +29,6 @@ class Koala extends Hewan {
   public function message() {
     echo "Saya memiliki hewan peliharaan. "; 
     echo "<br>";
-    echo "<hr>";
   }
 }
 
@@ -44,7 +37,6 @@ class greeting {
   public static function welcome() {
     echo "Nama hewannya adalah koala. ";
     echo "<br>";
-    echo "<hr>";
   }
 }
 
@@ -66,7 +58,7 @@ function getIterable():iterable {
   return [" adalah", " umur"." hewan."];
 }
 
-$myIterable = getIterable();
+$hewan = getIterable();
 foreach($myIterable as $item) {
   echo $item;
 }
@@ -79,7 +71,6 @@ interface Makanan {
 class Kucing implements Makanan {
   public function jenisKelamin() {
     echo "<br>";
-    echo "<hr>";
     echo "Kucing ini memiliki jenis kelamin jantan";
   }
 }
@@ -88,7 +79,6 @@ class Gajah implements Makanan {
   public function jenisKelamin() {
     echo ", gajah ini memiliki jenis kelamin betina. ";
     echo "<br>";
-    echo "<hr>";
   }
 }
 
@@ -100,6 +90,3 @@ foreach($animals as $animal) {
   $animal->jenisKelamin();
 }
 ?>
- 
-</body>
-</html>
